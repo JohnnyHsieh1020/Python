@@ -25,5 +25,3 @@ coordinateS = [int(x) for x in input("Please enter two point's coordinate to cal
 ansS = tm.slope(coordinateS[0], coordinateS[1], coordinateS[2], coordinateS[3])
 print(ansS)
 print('-'*30)
-
-
