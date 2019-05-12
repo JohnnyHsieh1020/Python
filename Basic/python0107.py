@@ -39,7 +39,7 @@ print('\n')
 #----Practice2 adjustment score----# 
 score=[int(x) for x in input('請輸入五筆成績來做調整(每筆之間請用空白鍵):').split()]
 
-print('五筆成績: ', end=' ')
+print('調整前的五筆成績: ', end=' ')
 for i in range(len(score)):
     print(score[i], end=' ')
 print('\n')
@@ -48,7 +48,7 @@ print('平均成績: ', np.average(score))
 
 print('\n調整後的五筆成績: ', end=' ')
 for i in range(len(score)):
-    score[i]=round(math.sqrt(score[i])*10, 2)
+    score[i]=round(math.sqrt(score[i])*10, 1)
     print(score[i], end=' ')
 print('\n')
 
