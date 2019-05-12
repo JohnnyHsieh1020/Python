@@ -4,9 +4,6 @@
     # list[ :end]代表 0~end-1
     # list[start: ]代表start~len(list)-1
     # list[ : ]代表0~len(list)-1
-#----import----#
-import numpy as np
-import math
 #----Practice3----#
 a=['hi','hello','yob','hey']
 #----印出從第0個位置到第2-1個位置----#
