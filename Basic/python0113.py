@@ -11,24 +11,24 @@ def printMsg(msg):
 #----function-Add1----#
 def add(n1, n2):
     result=n1+n2
-    print("%d + %d" %(n1, n2))
-    return "the answer is:", result
+    return result
 
-#----function-Add2----#
-def sum(num):
-    sumResult=0
+#----function-Add2連加----#
+def sigma(num):
+    sigmaResult=0
 
-    for i in range(1, num):
-        sumResult+=i
-    return "the answer is",sumResult
+    for i in range(1, num+1):
+        sigmaResult+=i
+  
+    return sigmaResult
 #----function-printMsg result----#
 print(printMsg("Hello world"))
 
 #----function-Add1 result----#
 a = int(input("enter the first number: "))
 b = int(input("enter the second number: "))
-print(add(a,b))
+print('The answer is', add(a,b))
 
 #----function-Add2 result----#
 c= int(input("enter the third number: "))
-print(sum(c))
+print('The answer is', sigma(c))
