@@ -6,6 +6,8 @@
 #----Import----#
 import urllib.request as req
 import bs4
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 #---- Start Web Crawler ----#
 url = "https://www.ptt.cc/bbs/movie/index.html"
