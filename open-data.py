@@ -11,6 +11,6 @@ with urllib.request.urlopen(src) as response:
 #Company list
 clist=data["result"]["results"] #抓公司資料的列表
 #print(clist)
-with open("data.txt", "w", encoding="utf-8")as file: #建立一個 data.txt 檔案
+with open("other file/data.txt", "w", encoding="utf-8")as file: #建立一個 data.txt 檔案
     for company in clist:
         file.write(company["公司名稱"]+"\n") #寫入檔案
