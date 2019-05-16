@@ -22,8 +22,9 @@ file1.open()
 data1 = file1.read()
 print(data1)
 print("-"*30)
+
 # 讀取第二個檔案
-#file2 = File("other file/test2.txt")
-#file2.open()
-#data = file2.read()
-#print(data)
+file2 = File("other file/test2.txt")
+file2.open()
+data = file2.read()
+print(data)

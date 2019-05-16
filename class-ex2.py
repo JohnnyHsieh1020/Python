@@ -12,4 +12,4 @@ class Point:
 p1 = Point(3,4)
 p1.show()
 result = p1.distance(0,0)
-print(result)
+print('distance:', result)

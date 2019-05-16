@@ -6,7 +6,7 @@ class IO:
         if src not in IO.supportedSrcs:
             print("404 Not Found")
         elif src == "file":
-            with open ("other file/data.txt", mode="r", encoding="utf-8") as file:
+            with open ("other file/test2.txt", mode="r", encoding="utf-8") as file:
                 data = file.read()
             print(data)
         else:
