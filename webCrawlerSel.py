@@ -5,7 +5,7 @@ from random import randint
 import time
 #--------------#
 url = "https://www.imdb.com/"
-path = 'C:/Users/User/Documents/GitHub/Python/chromedriver.exe'
+path = 'chromedriver.exe'
 
 #----使用url爬出需要的資料----#
 def get_movie_info(movie_url):
