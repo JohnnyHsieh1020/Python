@@ -1,5 +1,4 @@
 #----import----#
-from pyquery import PyQuery as pq
 from selenium import webdriver
 import time
 import ssl
