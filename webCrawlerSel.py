@@ -1,11 +1,11 @@
 #----import----#
 from pyquery import PyQuery as pq
 from selenium import webdriver
-from random import randint
 import time
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 #--------------#
 url = "https://www.imdb.com/"
-path = 'chromedriver.exe'
 
 #----使用url爬出需要的資料----#
 def get_movie_info(movie_url):
@@ -28,7 +28,7 @@ def get_movie_info(movie_url):
 
 #----自動化搜尋----#
 def get_movies(*args):
-    driver = webdriver.Chrome(path) 
+    driver = webdriver.Chrome() 
     movies = dict()
     for movie_title in args:
         driver.get(url)
@@ -52,8 +52,8 @@ def get_movies(*args):
         current_url = driver.current_url
         movie_info = get_movie_info(current_url)
         movies[movie_title] = movie_info
-        time.sleep(randint(3, 8))
-    driver.close()
+        time.sleep(3)
+    driver.quit()
     return movies
 #--------------#
 result = get_movies("Avengers: Endgame", "Spider-Man: Far from Home")
