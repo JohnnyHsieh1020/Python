@@ -8,14 +8,14 @@
 
 其他資源：
 -------------
->import:
->>1. from selenium import webdriver
->>2. import ssl
->>>2.1 ssl._create_default_https_context = ssl._create_unverified_context
->>4. import time
->>5. from random import randint
->>6. import urllib.request as req
->>7. import bs4
->>8. import re
->>9. import urllib.error as err
->>10. import json
+* import:
+>1. from selenium import webdriver
+>2. import ssl
+>2.1 ssl._create_default_https_context = ssl._create_unverified_context
+>4. import time
+>5. from random import randint
+>6. import urllib.request as req
+>7. import bs4
+>8. import re
+>9. import urllib.error as err
+>10. import json
